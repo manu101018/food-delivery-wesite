@@ -1,0 +1,234 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* utility classses */
+.btn{
+    background-color: brown;
+    color: white;
+    font-size: 1.1rem;
+    padding: 6px 9px;
+    border-radius: 12px;
+}
+.btn:hover{
+    background-color: rgb(128, 23, 23);
+    cursor: pointer;
+}
+/* navigation */
+.logo img {
+    height: 3rem;
+    width: 4rem;
+    padding: 0px 10px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    color: white;
+    background-color: black;
+    top: 0px;
+    opacity: 0.78;
+    z-index: 1;
+}
+
+#navbar ul {
+    display: flex;
+}
+#navbar ul li{
+    padding: 5px 30px;
+    margin: auto;
+    list-style: none;
+}
+#navbar ul li a {
+    padding: 2px 6px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Home */
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('img/bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 185px 450px;
+    margin: 2px 3px;
+}
+#home-heading{
+    padding: 20px 3px;
+    font-size: 2rem;
+}
+#home-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+/* Service section*/
+#heading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: black;
+    font-size: 3rem;
+}
+.container{
+    border: 2px solid brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
+    height: 250px;
+    background-color: rgb(243, 231, 214);
+    flex-direction: column;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+.container img{
+    width: 140px;
+    height: 100px;
+    padding: 15px;
+}
+#content-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.h-secondary{
+    padding-bottom:12px;
+}
+/* sponsers section */
+#oursponsers{
+    position: relative;
+}
+#oursponsers::before{
+    content: "";
+    position: absolute;
+    background:url('img/bg3.jpg') no-repeat center center/cover;
+    height: 121%;
+    top:50px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.3;
+}
+#sponsers-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 60px;
+}
+#sponsers-logo-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo1 img{
+    width: 100px;
+    height: 100px;
+}
+.logo2 img{
+    width: 110px;
+    height: 110px;
+}
+.logo3 img{
+    width: 100px;
+    height: 100px;
+}
+.logo4 img{
+    width: 110px;
+    height: 80px;
+}
+
+/*contact us section*/
+
+.bg4 img{
+    z-index: -1;
+    opacity: 0.34;
+    position: absolute;
+    margin-top: 114px;
+    width: 100%;
+    height: 666px;
+}
+#contact-us-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-top: 170px;
+}
+#contact-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form-group label{
+    width: 700px;
+}
+.form-group input{
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.form-group textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/* footer */
+#bottom{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 30px;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 40px;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+.btn2 input{
+    padding:5px;
+    margin: 20px 260px;
+    border-radius: 10px;
+    background-color: rgb(100, 91, 91);
+    color: white;
+}
+.btn2 input:hover{
+    background-color: rgb(36, 30, 30);
+    cursor: pointer;
+}
